@@ -13,7 +13,7 @@ const router = express.Router();
 router
 	.route("/login")
 	.get(forwardAuthenticated, (req, res) => {
-		res.render("login", { title: "Log in - Binterest" });
+		res.render("login", { title: "Log in - Etoro trade" });
 	})
 	.post(login);
 
@@ -31,7 +31,7 @@ router.route("/authorize").get((req, res) => {
 router
 	.route("/signup")
 	.get((req, res) => {
-		res.render("signup", { title: "Sign up - Binterest" });
+		res.render("signup", { title: "Sign up - Etoro trade" });
 	})
 	.post(
 		validateSignupFields,
