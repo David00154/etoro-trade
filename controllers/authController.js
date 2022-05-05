@@ -70,7 +70,7 @@ const signup = async (req, res) => {
 		if (user) {
 			req.flash(
 				"success_msg",
-				"Signup successful. We sent an account verification link to your email"
+				"Signup successful"
 			);
 			res.redirect("/user/login");
 		}
