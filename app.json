@@ -1,0 +1,13 @@
+{
+	"name": "Etoro-trade",
+	"description": "Etoro-trade app",
+	"keywords": ["etoro-trade", "heroku"],
+	"repository": "https://github.com/david00154/etoro-trade",
+	"addons": ["heroku-postgresql:hobby-dev"],
+	"image": "heroku/nodejs",
+	"buildpacks": [
+		{
+			"url": "heroku/nodejs"
+		}
+	]
+}
